@@ -1,0 +1,123 @@
+html, body {
+  margin: 0;           
+  padding: 0;
+  height: 100%;         
+}
+
+body {
+  background-image: url('./yoon.jpg');
+  background-size: cover;       
+  background-position: center; 
+  background-repeat: no-repeat; 
+  min-height: 100vh;            
+}
+
+.App {
+  max-width: 400px;
+  margin: 25px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 45px;
+  box-shadow: 0 5px 5px rgba(188, 29, 29, 0.15);
+  text-align: left;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.note-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #db83ce;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-section button:hover {
+  background-color: #d983f0;
+}
+
+.todos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-radius: 15px;
+  background-color: #ffe3e0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.todo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.actions button {
+  margin-left: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 5px 8px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.save-btn {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #555ff4;
+  color: white;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background-color: #555ff4;
+}
+.note {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0 0 0;
+}
+
+.todo-card.done {
+  background-color: #deabf4; /* светло-зелёный фон */
+  text-decoration: line-through; /* зачёркнутый текст */
+  color: #ca3131;
+}
